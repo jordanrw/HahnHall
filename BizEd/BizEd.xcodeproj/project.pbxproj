@@ -14,6 +14,20 @@
 		17CB63751B681A4C00D5213D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63741B681A4C00D5213D /* Images.xcassets */; };
 		17CB63781B681A4C00D5213D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63761B681A4C00D5213D /* LaunchScreen.xib */; };
 		17CB63841B681A4C00D5213D /* BizEdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63831B681A4C00D5213D /* BizEdTests.m */; };
+		17CB63991B681D6C00D5213D /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB638E1B681D6C00D5213D /* bookmark.png */; };
+		17CB639A1B681D6C00D5213D /* bookmark_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB638F1B681D6C00D5213D /* bookmark_filled.png */; };
+		17CB639B1B681D6C00D5213D /* class.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63901B681D6C00D5213D /* class.png */; };
+		17CB639C1B681D6C00D5213D /* class_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63911B681D6C00D5213D /* class_filled.png */; };
+		17CB639D1B681D6C00D5213D /* idea.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63921B681D6C00D5213D /* idea.png */; };
+		17CB639E1B681D6C00D5213D /* idea_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63931B681D6C00D5213D /* idea_filled.png */; };
+		17CB639F1B681D6C00D5213D /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63941B681D6C00D5213D /* note.png */; };
+		17CB63A01B681D6C00D5213D /* note_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63951B681D6C00D5213D /* note_filled.png */; };
+		17CB63A11B681D6C00D5213D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63961B681D6C00D5213D /* settings.png */; };
+		17CB63A21B681D6C00D5213D /* settings_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63971B681D6C00D5213D /* settings_filled.png */; };
+		17CB63A31B681D6C00D5213D /* settings_outlined.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63981B681D6C00D5213D /* settings_outlined.png */; };
+		17CB63A61B684B1F00D5213D /* ClassSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */; };
+		17CB63A91B684B4900D5213D /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63A81B684B4900D5213D /* NotesViewController.m */; };
+		17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63AB1B684B6000D5213D /* WorkModeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,23 @@
 		17CB637D1B681A4C00D5213D /* BizEdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BizEdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CB63821B681A4C00D5213D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17CB63831B681A4C00D5213D /* BizEdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BizEdTests.m; sourceTree = "<group>"; };
+		17CB638E1B681D6C00D5213D /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
+		17CB638F1B681D6C00D5213D /* bookmark_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_filled.png; sourceTree = "<group>"; };
+		17CB63901B681D6C00D5213D /* class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class.png; sourceTree = "<group>"; };
+		17CB63911B681D6C00D5213D /* class_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_filled.png; sourceTree = "<group>"; };
+		17CB63921B681D6C00D5213D /* idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idea.png; sourceTree = "<group>"; };
+		17CB63931B681D6C00D5213D /* idea_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idea_filled.png; sourceTree = "<group>"; };
+		17CB63941B681D6C00D5213D /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		17CB63951B681D6C00D5213D /* note_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note_filled.png; sourceTree = "<group>"; };
+		17CB63961B681D6C00D5213D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		17CB63971B681D6C00D5213D /* settings_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_filled.png; sourceTree = "<group>"; };
+		17CB63981B681D6C00D5213D /* settings_outlined.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_outlined.png; sourceTree = "<group>"; };
+		17CB63A41B684B1F00D5213D /* ClassSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassSelectionViewController.h; sourceTree = "<group>"; };
+		17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassSelectionViewController.m; sourceTree = "<group>"; };
+		17CB63A71B684B4900D5213D /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		17CB63A81B684B4900D5213D /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		17CB63AA1B684B6000D5213D /* WorkModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkModeViewController.h; sourceTree = "<group>"; };
+		17CB63AB1B684B6000D5213D /* WorkModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkModeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +117,15 @@
 				17CB636E1B681A4C00D5213D /* ViewController.h */,
 				17CB636F1B681A4C00D5213D /* ViewController.m */,
 				17CB63711B681A4C00D5213D /* Main.storyboard */,
+				17CB63A41B684B1F00D5213D /* ClassSelectionViewController.h */,
+				17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */,
+				17CB63A71B684B4900D5213D /* NotesViewController.h */,
+				17CB63A81B684B4900D5213D /* NotesViewController.m */,
+				17CB63AA1B684B6000D5213D /* WorkModeViewController.h */,
+				17CB63AB1B684B6000D5213D /* WorkModeViewController.m */,
 				17CB63741B681A4C00D5213D /* Images.xcassets */,
 				17CB63761B681A4C00D5213D /* LaunchScreen.xib */,
+				17CB638D1B681D6C00D5213D /* icons */,
 				17CB63671B681A4C00D5213D /* Supporting Files */,
 			);
 			path = BizEd;
@@ -117,6 +155,24 @@
 				17CB63821B681A4C00D5213D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17CB638D1B681D6C00D5213D /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				17CB638E1B681D6C00D5213D /* bookmark.png */,
+				17CB638F1B681D6C00D5213D /* bookmark_filled.png */,
+				17CB63901B681D6C00D5213D /* class.png */,
+				17CB63911B681D6C00D5213D /* class_filled.png */,
+				17CB63921B681D6C00D5213D /* idea.png */,
+				17CB63931B681D6C00D5213D /* idea_filled.png */,
+				17CB63941B681D6C00D5213D /* note.png */,
+				17CB63951B681D6C00D5213D /* note_filled.png */,
+				17CB63961B681D6C00D5213D /* settings.png */,
+				17CB63971B681D6C00D5213D /* settings_filled.png */,
+				17CB63981B681D6C00D5213D /* settings_outlined.png */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +255,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17CB63A21B681D6C00D5213D /* settings_filled.png in Resources */,
+				17CB63A11B681D6C00D5213D /* settings.png in Resources */,
+				17CB639C1B681D6C00D5213D /* class_filled.png in Resources */,
+				17CB639F1B681D6C00D5213D /* note.png in Resources */,
+				17CB63A31B681D6C00D5213D /* settings_outlined.png in Resources */,
+				17CB639E1B681D6C00D5213D /* idea_filled.png in Resources */,
+				17CB639B1B681D6C00D5213D /* class.png in Resources */,
+				17CB639A1B681D6C00D5213D /* bookmark_filled.png in Resources */,
+				17CB63A01B681D6C00D5213D /* note_filled.png in Resources */,
 				17CB63731B681A4C00D5213D /* Main.storyboard in Resources */,
+				17CB63991B681D6C00D5213D /* bookmark.png in Resources */,
 				17CB63781B681A4C00D5213D /* LaunchScreen.xib in Resources */,
+				17CB639D1B681D6C00D5213D /* idea.png in Resources */,
 				17CB63751B681A4C00D5213D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17CB63A91B684B4900D5213D /* NotesViewController.m in Sources */,
+				17CB63A61B684B1F00D5213D /* ClassSelectionViewController.m in Sources */,
+				17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */,
 				17CB63701B681A4C00D5213D /* ViewController.m in Sources */,
 				17CB636D1B681A4C00D5213D /* AppDelegate.m in Sources */,
 				17CB636A1B681A4C00D5213D /* main.m in Sources */,

@@ -1,25 +1,172 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F6a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-G1-r0I">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="768"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-c7-Fub">
+                                        <rect key="frame" x="10" y="25" width="40" height="40"/>
+                                        <state key="normal" image="bookmark.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="bookmark_filled.png"/>
+                                        <connections>
+                                            <action selector="classButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHw-iS-N0k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY1-Z4-Eln">
+                                        <rect key="frame" x="10" y="94" width="40" height="40"/>
+                                        <state key="normal" image="note.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="note_filled.png"/>
+                                        <connections>
+                                            <action selector="notesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBG-oZ-25J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHh-d2-0TY">
+                                        <rect key="frame" x="10" y="364" width="40" height="40"/>
+                                        <state key="normal" image="idea.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="idea_filled.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dy-Tl-ph5">
+                                        <rect key="frame" x="10" y="637" width="40" height="40"/>
+                                        <state key="normal" image="class.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="class_filled.png"/>
+                                        <connections>
+                                            <action selector="workButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDH-br-Njn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHE-yk-xsb">
+                                        <rect key="frame" x="10" y="701" width="40" height="40"/>
+                                        <state key="normal" image="settings.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="settings_filled.png"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpW-7s-06i">
+                                <rect key="frame" x="60" y="0.0" width="964" height="768"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90212382707774796" green="0.90212382707774796" blue="0.90212382707774796" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="classButton" destination="A4a-c7-Fub" id="ReA-gG-YoB"/>
+                        <outlet property="container" destination="lpW-7s-06i" id="PaH-M4-BoK"/>
+                        <outlet property="notesButton" destination="SY1-Z4-Eln" id="5GZ-hl-0j1"/>
+                        <outlet property="workButton" destination="8dy-Tl-ph5" id="Se7-NE-sPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="330" y="720"/>
+        </scene>
+        <!--Class Selection View Controller-->
+        <scene sceneID="XWo-fa-Gbz">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="K7h-J6-So1" customClass="ClassSelectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IGd-M1-cFJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tnb-vo-Fk4"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RaG-eZ-eak">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.66822736582716136" blue="0.95149043685859691" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rms-ef-hRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="-140"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="0bL-jx-lrG">
+            <objects>
+                <viewController id="836-Hp-hBN" customClass="NotesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Irr-78-QxD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z3P-VU-pmH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OLY-bs-V3i">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.99156324860553036" blue="0.50650437684398286" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKW-6P-hlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="720"/>
+        </scene>
+        <!--Work Mode View Controller-->
+        <scene sceneID="A6m-BC-g0m">
+            <objects>
+                <viewController id="87S-z5-AgA" customClass="WorkModeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0xE-pl-RIG"/>
+                        <viewControllerLayoutGuide type="bottom" id="fuU-Ph-keG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dvN-Nu-zga">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-78-R0l">
+                                <rect key="frame" x="16" y="28" width="237" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56868579146065279" green="1" blue="0.97481902190272374" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRh-yH-IJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="1634"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bookmark.png" width="100" height="100"/>
+        <image name="bookmark_filled.png" width="100" height="100"/>
+        <image name="class.png" width="100" height="100"/>
+        <image name="class_filled.png" width="100" height="100"/>
+        <image name="idea.png" width="100" height="100"/>
+        <image name="idea_filled.png" width="100" height="100"/>
+        <image name="note.png" width="100" height="100"/>
+        <image name="note_filled.png" width="100" height="100"/>
+        <image name="settings.png" width="100" height="100"/>
+        <image name="settings_filled.png" width="100" height="100"/>
+    </resources>
 </document>
