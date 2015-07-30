@@ -85,12 +85,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330" y="720"/>
+            <point key="canvasLocation" x="318" y="720"/>
         </scene>
         <!--Class Selection View Controller-->
         <scene sceneID="XWo-fa-Gbz">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="K7h-J6-So1" customClass="ClassSelectionViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pickles" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K7h-J6-So1" customClass="ClassSelectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IGd-M1-cFJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Tnb-vo-Fk4"/>

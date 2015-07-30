@@ -20,6 +20,7 @@
 
 @end
 
+
 @implementation ViewController
 @synthesize container;
 
@@ -44,21 +45,39 @@
 
 #pragma mark - buttons
 - (IBAction)classButton:(UIButton *)sender {
-    NSLog(@"class");
     
-    ClassSelectionViewController *vc = [[ClassSelectionViewController alloc]init];
+    ClassSelectionViewController *cvc = [[ClassSelectionViewController alloc]init];
+    [cvc.view setBackgroundColor:[UIColor redColor]];
+    [self displayContentController:cvc];
+    
+//    UILabel *label = [[UILabel alloc]init];
+//    label.text = @"BOOOM";
+//    [self.container addSubview:label];
+  
+    /* add it but not in the container
+    ClassSelectionViewController *cvc = [[ClassSelectionViewController alloc]init];
+    [cvc.view setBackgroundColor:[UIColor purpleColor]];
+    [self addChildViewController:cvc];
+    [cvc didMoveToParentViewController:self];
+    
+    [self.view addSubview:cvc.view];
+     */
+
+}
+
+
+- (void)displayContentController: (UIViewController *)vc {
+
     [self addChildViewController:vc];
-    
+    //content.view.frame
+    [self.container addSubview:vc.view];
+    [vc didMoveToParentViewController:self];
 }
 
-
-- (void)displayContentController: (UIViewController *)content {
-    
-    //[self addChildViewController:content];
-    //content.view.frame = [self frame]
-    //self.view addSubview:self.cu
-    
-}
+//- (CGRect)frameForContent {
+//    CGRect *cg = [cGRect
+//    return cg;
+//}
 
 
 - (IBAction)notesButton:(UIButton *)sender {
