@@ -5,6 +5,26 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="5VH-AO-51M">
+            <objects>
+                <viewController id="Iut-Rn-7ZM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f2p-sA-tu5"/>
+                        <viewControllerLayoutGuide type="bottom" id="fDC-kH-H4D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jab-hL-mXu">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMe-yR-jyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="710"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -24,9 +44,10 @@
                                         <state key="normal" image="bookmark.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="bookmark_filled.png"/>
                                         <state key="highlighted" image="bookmark_filled.png"/>
                                         <connections>
-                                            <action selector="classButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHw-iS-N0k"/>
+                                            <action selector="classButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q1v-ce-8vE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY1-Z4-Eln">
@@ -36,7 +57,7 @@
                                         </state>
                                         <state key="highlighted" image="note_filled.png"/>
                                         <connections>
-                                            <action selector="notesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBG-oZ-25J"/>
+                                            <action selector="notesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39U-Pb-4xW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHh-d2-0TY">
@@ -77,7 +98,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="classButton" destination="A4a-c7-Fub" id="ReA-gG-YoB"/>
                         <outlet property="container" destination="lpW-7s-06i" id="PaH-M4-BoK"/>
                         <outlet property="notesButton" destination="SY1-Z4-Eln" id="5GZ-hl-0j1"/>
                         <outlet property="workButton" destination="8dy-Tl-ph5" id="Se7-NE-sPL"/>
@@ -90,7 +110,7 @@
         <!--Class Selection View Controller-->
         <scene sceneID="XWo-fa-Gbz">
             <objects>
-                <viewController storyboardIdentifier="pickles" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K7h-J6-So1" customClass="ClassSelectionViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="class" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K7h-J6-So1" customClass="ClassSelectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IGd-M1-cFJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Tnb-vo-Fk4"/>
@@ -98,20 +118,40 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RaG-eZ-eak">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHX-I0-s16">
+                                <rect key="frame" x="449" y="614" width="127" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="K7h-J6-So1" eventType="touchUpInside" id="lZu-8Z-Mln"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-Yg-w3D">
+                                <rect key="frame" x="16" y="20" width="161" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.66822736582716136" blue="0.95149043685859691" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="label" destination="r8I-Yg-w3D" id="SK0-bs-MH5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rms-ef-hRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584" y="-140"/>
+            <point key="canvasLocation" x="1584" y="-192"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="0bL-jx-lrG">
             <objects>
-                <viewController id="836-Hp-hBN" customClass="NotesViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notes" id="836-Hp-hBN" customClass="NotesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Irr-78-QxD"/>
                         <viewControllerLayoutGuide type="bottom" id="Z3P-VU-pmH"/>
@@ -119,10 +159,30 @@
                     <view key="view" contentMode="scaleToFill" id="OLY-bs-V3i">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cye-5h-eQp">
+                                <rect key="frame" x="16" y="20" width="161" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NI-CP-6iT">
+                                <rect key="frame" x="449" y="369" width="127" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="836-Hp-hBN" eventType="touchUpInside" id="Hs1-1f-0bo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.99156324860553036" blue="0.50650437684398286" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="label" destination="Cye-5h-eQp" id="L3h-C0-pYW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKW-6P-hlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +191,7 @@
         <!--Work Mode View Controller-->
         <scene sceneID="A6m-BC-g0m">
             <objects>
-                <viewController id="87S-z5-AgA" customClass="WorkModeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="work" id="87S-z5-AgA" customClass="WorkModeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0xE-pl-RIG"/>
                         <viewControllerLayoutGuide type="bottom" id="fuU-Ph-keG"/>
@@ -140,6 +200,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-1b-CdL">
+                                <rect key="frame" x="449" y="369" width="127" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="87S-z5-AgA" eventType="touchUpInside" id="KzP-6F-QcV"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-78-R0l">
                                 <rect key="frame" x="16" y="28" width="237" height="44"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="33"/>
@@ -151,6 +220,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="label" destination="8WM-78-R0l" id="wca-KS-dLg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRh-yH-IJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

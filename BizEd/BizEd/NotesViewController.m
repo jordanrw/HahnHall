@@ -9,6 +9,7 @@
 #import "NotesViewController.h"
 
 @interface NotesViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -22,6 +23,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)button:(UIButton *)sender {
+    _label.text = @"Notes";
 }
 
 /*

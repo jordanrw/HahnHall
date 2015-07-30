@@ -28,6 +28,8 @@
 		17CB63A61B684B1F00D5213D /* ClassSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */; };
 		17CB63A91B684B4900D5213D /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63A81B684B4900D5213D /* NotesViewController.m */; };
 		17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63AB1B684B6000D5213D /* WorkModeViewController.m */; };
+		17CB63B61B69FAA700D5213D /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63B51B69FAA700D5213D /* TestTableViewController.m */; };
+		17CB63B91B6AC9B200D5213D /* LoginSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		17CB63A81B684B4900D5213D /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		17CB63AA1B684B6000D5213D /* WorkModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkModeViewController.h; sourceTree = "<group>"; };
 		17CB63AB1B684B6000D5213D /* WorkModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkModeViewController.m; sourceTree = "<group>"; };
+		17CB63B41B69FAA700D5213D /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		17CB63B51B69FAA700D5213D /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		17CB63B71B6AC9B200D5213D /* LoginSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSignupViewController.h; sourceTree = "<group>"; };
+		17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSignupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +123,12 @@
 				17CB636E1B681A4C00D5213D /* ViewController.h */,
 				17CB636F1B681A4C00D5213D /* ViewController.m */,
 				17CB63711B681A4C00D5213D /* Main.storyboard */,
+				17CB63B71B6AC9B200D5213D /* LoginSignupViewController.h */,
+				17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */,
 				17CB63A41B684B1F00D5213D /* ClassSelectionViewController.h */,
 				17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */,
+				17CB63B41B69FAA700D5213D /* TestTableViewController.h */,
+				17CB63B51B69FAA700D5213D /* TestTableViewController.m */,
 				17CB63A71B684B4900D5213D /* NotesViewController.h */,
 				17CB63A81B684B4900D5213D /* NotesViewController.m */,
 				17CB63AA1B684B6000D5213D /* WorkModeViewController.h */,
@@ -290,7 +300,9 @@
 				17CB63A61B684B1F00D5213D /* ClassSelectionViewController.m in Sources */,
 				17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */,
 				17CB63701B681A4C00D5213D /* ViewController.m in Sources */,
+				17CB63B91B6AC9B200D5213D /* LoginSignupViewController.m in Sources */,
 				17CB636D1B681A4C00D5213D /* AppDelegate.m in Sources */,
+				17CB63B61B69FAA700D5213D /* TestTableViewController.m in Sources */,
 				17CB636A1B681A4C00D5213D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +500,7 @@
 				17CB63891B681A4C00D5213D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17CB638A1B681A4C00D5213D /* Build configuration list for PBXNativeTarget "BizEdTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				17CB638C1B681A4C00D5213D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

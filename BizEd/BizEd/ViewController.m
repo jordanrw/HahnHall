@@ -14,6 +14,7 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) UIStoryboard *storyBoard;
 @property (weak, nonatomic) IBOutlet UIButton *classButton;
 @property (weak, nonatomic) IBOutlet UIButton *notesButton;
 @property (weak, nonatomic) IBOutlet UIButton *workButton;
@@ -28,7 +29,7 @@
 #pragma mark - general methods
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,50 +44,33 @@
 
 
 
-#pragma mark - buttons
+#pragma mark - SideView (buttons)
 - (IBAction)classButton:(UIButton *)sender {
     
-    ClassSelectionViewController *cvc = [[ClassSelectionViewController alloc]init];
-    [cvc.view setBackgroundColor:[UIColor redColor]];
-    [self displayContentController:cvc];
+    ClassSelectionViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"class"];
+    [self displayContentController:vc];
     
-//    UILabel *label = [[UILabel alloc]init];
-//    label.text = @"BOOOM";
-//    [self.container addSubview:label];
-  
-    /* add it but not in the container
-    ClassSelectionViewController *cvc = [[ClassSelectionViewController alloc]init];
-    [cvc.view setBackgroundColor:[UIColor purpleColor]];
-    [self addChildViewController:cvc];
-    [cvc didMoveToParentViewController:self];
-    
-    [self.view addSubview:cvc.view];
-     */
 
+    
+    _classButton.selected = YES;
 }
 
+- (IBAction)notesButton:(UIButton *)sender {
+    NotesViewController *vc = [_storyBoard instantiateViewControllerWithIdentifier:@"notes"];
+    [self displayContentController:vc];
+}
+
+- (IBAction)workButton:(UIButton *)sender {
+    WorkModeViewController *vc = [_storyBoard instantiateViewControllerWithIdentifier:@"work"];
+    [self displayContentController:vc];
+}
 
 - (void)displayContentController: (UIViewController *)vc {
-
+    
     [self addChildViewController:vc];
     //content.view.frame
     [self.container addSubview:vc.view];
     [vc didMoveToParentViewController:self];
-}
-
-//- (CGRect)frameForContent {
-//    CGRect *cg = [cGRect
-//    return cg;
-//}
-
-
-- (IBAction)notesButton:(UIButton *)sender {
-    
-}
-
-
-- (IBAction)workButton:(UIButton *)sender {
-    
 }
 
 

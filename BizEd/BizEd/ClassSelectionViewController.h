@@ -10,4 +10,6 @@
 
 @interface ClassSelectionViewController : UIViewController
 
+- (void)bakeCookies;
+
 @end

@@ -10,9 +10,19 @@
 
 @interface ClassSelectionViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation ClassSelectionViewController
+
+-(void)bakeCookies {
+    
+}
+
+- (void)eatCookies {
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +32,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)button:(UIButton *)sender {
+    _label.text = @"Classes";
 }
 
 /*
