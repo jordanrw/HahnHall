@@ -24,6 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)LogIn:(UIButton *)sender {
+    
+}
+
+- (IBAction)SignUp:(UIButton *)sender {
+    
+}
+
 /*
 #pragma mark - Navigation
 
