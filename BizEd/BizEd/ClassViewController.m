@@ -1,28 +1,18 @@
 //
-//  ClassSelectionViewController.m
+//  ClassViewController.m
 //  BizEd
 //
-//  Created by Jordan White on 7/28/15.
+//  Created by Jordan White on 8/1/15.
 //  Copyright (c) 2015 Two Beards and Fro. All rights reserved.
 //
 
-#import "ClassSelectionViewController.h"
+#import "ClassViewController.h"
 
-@interface ClassSelectionViewController ()
-
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@interface ClassViewController ()
 
 @end
 
-@implementation ClassSelectionViewController
-
--(void)bakeCookies {
-    
-}
-
-- (void)eatCookies {
-    
-}
+@implementation ClassViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,10 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)button:(UIButton *)sender {
-    _label.text = @"Classes";
 }
 
 /*

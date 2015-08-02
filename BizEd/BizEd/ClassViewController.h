@@ -1,5 +1,5 @@
 //
-//  NotesViewController.h
+//  ClassViewController.h
 //  BizEd
 //
 //  Created by Jordan White on 8/1/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotesViewController : UISplitViewController
+@interface ClassViewController : UISplitViewController
 
 @end

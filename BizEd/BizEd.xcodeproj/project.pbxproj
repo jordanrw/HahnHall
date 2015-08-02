@@ -25,14 +25,13 @@
 		17CB63A11B681D6C00D5213D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63961B681D6C00D5213D /* settings.png */; };
 		17CB63A21B681D6C00D5213D /* settings_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63971B681D6C00D5213D /* settings_filled.png */; };
 		17CB63A31B681D6C00D5213D /* settings_outlined.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63981B681D6C00D5213D /* settings_outlined.png */; };
-		17CB63A61B684B1F00D5213D /* ClassSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */; };
-		17CB63A91B684B4900D5213D /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63A81B684B4900D5213D /* NotesViewController.m */; };
 		17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63AB1B684B6000D5213D /* WorkModeViewController.m */; };
-		17CB63B61B69FAA700D5213D /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63B51B69FAA700D5213D /* TestTableViewController.m */; };
 		17CB63B91B6AC9B200D5213D /* LoginSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */; };
 		17CB63F31B6DBAF900D5213D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63F01B6DBAF900D5213D /* home.png */; };
 		17CB63F41B6DBAF900D5213D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63F11B6DBAF900D5213D /* profile.png */; };
 		17CB63F51B6DBAF900D5213D /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63F21B6DBAF900D5213D /* setting.png */; };
+		17CB63F91B6DC73D00D5213D /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63F81B6DC73D00D5213D /* ClassViewController.m */; };
+		17CB63FC1B6DC8D300D5213D /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63FB1B6DC8D300D5213D /* NotesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,19 +69,17 @@
 		17CB63961B681D6C00D5213D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		17CB63971B681D6C00D5213D /* settings_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_filled.png; sourceTree = "<group>"; };
 		17CB63981B681D6C00D5213D /* settings_outlined.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_outlined.png; sourceTree = "<group>"; };
-		17CB63A41B684B1F00D5213D /* ClassSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassSelectionViewController.h; sourceTree = "<group>"; };
-		17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassSelectionViewController.m; sourceTree = "<group>"; };
-		17CB63A71B684B4900D5213D /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
-		17CB63A81B684B4900D5213D /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		17CB63AA1B684B6000D5213D /* WorkModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkModeViewController.h; sourceTree = "<group>"; };
 		17CB63AB1B684B6000D5213D /* WorkModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkModeViewController.m; sourceTree = "<group>"; };
-		17CB63B41B69FAA700D5213D /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
-		17CB63B51B69FAA700D5213D /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		17CB63B71B6AC9B200D5213D /* LoginSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSignupViewController.h; sourceTree = "<group>"; };
 		17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSignupViewController.m; sourceTree = "<group>"; };
 		17CB63F01B6DBAF900D5213D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		17CB63F11B6DBAF900D5213D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		17CB63F21B6DBAF900D5213D /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		17CB63F71B6DC73D00D5213D /* ClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
+		17CB63F81B6DC73D00D5213D /* ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
+		17CB63FA1B6DC8D300D5213D /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		17CB63FB1B6DC8D300D5213D /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,17 +123,15 @@
 			children = (
 				17CB636B1B681A4C00D5213D /* AppDelegate.h */,
 				17CB636C1B681A4C00D5213D /* AppDelegate.m */,
+				17CB63B71B6AC9B200D5213D /* LoginSignupViewController.h */,
+				17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */,
 				17CB636E1B681A4C00D5213D /* ViewController.h */,
 				17CB636F1B681A4C00D5213D /* ViewController.m */,
 				17CB63711B681A4C00D5213D /* Main.storyboard */,
-				17CB63B71B6AC9B200D5213D /* LoginSignupViewController.h */,
-				17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */,
-				17CB63A41B684B1F00D5213D /* ClassSelectionViewController.h */,
-				17CB63A51B684B1F00D5213D /* ClassSelectionViewController.m */,
-				17CB63B41B69FAA700D5213D /* TestTableViewController.h */,
-				17CB63B51B69FAA700D5213D /* TestTableViewController.m */,
-				17CB63A71B684B4900D5213D /* NotesViewController.h */,
-				17CB63A81B684B4900D5213D /* NotesViewController.m */,
+				17CB63F71B6DC73D00D5213D /* ClassViewController.h */,
+				17CB63F81B6DC73D00D5213D /* ClassViewController.m */,
+				17CB63FA1B6DC8D300D5213D /* NotesViewController.h */,
+				17CB63FB1B6DC8D300D5213D /* NotesViewController.m */,
 				17CB63AA1B684B6000D5213D /* WorkModeViewController.h */,
 				17CB63AB1B684B6000D5213D /* WorkModeViewController.m */,
 				17CB63741B681A4C00D5213D /* Images.xcassets */,
@@ -316,13 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17CB63A91B684B4900D5213D /* NotesViewController.m in Sources */,
-				17CB63A61B684B1F00D5213D /* ClassSelectionViewController.m in Sources */,
+				17CB63FC1B6DC8D300D5213D /* NotesViewController.m in Sources */,
+				17CB63F91B6DC73D00D5213D /* ClassViewController.m in Sources */,
 				17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */,
 				17CB63701B681A4C00D5213D /* ViewController.m in Sources */,
 				17CB63B91B6AC9B200D5213D /* LoginSignupViewController.m in Sources */,
 				17CB636D1B681A4C00D5213D /* AppDelegate.m in Sources */,
-				17CB63B61B69FAA700D5213D /* TestTableViewController.m in Sources */,
 				17CB636A1B681A4C00D5213D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

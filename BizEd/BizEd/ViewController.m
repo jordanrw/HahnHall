@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "ClassSelectionViewController.h"
+
+#import "ClassViewController.h"
 #import "NotesViewController.h"
 #import "WorkModeViewController.h"
 
@@ -15,9 +16,7 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) UIStoryboard *storyBoard;
-@property (weak, nonatomic) IBOutlet UIButton *classButton;
-@property (weak, nonatomic) IBOutlet UIButton *notesButton;
-@property (weak, nonatomic) IBOutlet UIButton *workButton;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
 
@@ -32,7 +31,7 @@
     _storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     //load the class page
-    ClassSelectionViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"class"];
+    ClassViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"class"];
     [self displayContentController:vc];
 }
 
@@ -51,17 +50,20 @@
 #pragma mark - SideView (buttons)
 - (IBAction)classButton:(UIButton *)sender {
     
-    ClassSelectionViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"class"];
+    ClassViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"class"];
+    _titleLabel.text = @"Class Selection";
     [self displayContentController:vc];
 }
 
 - (IBAction)notesButton:(UIButton *)sender {
     NotesViewController *vc = [_storyBoard instantiateViewControllerWithIdentifier:@"notes"];
+    _titleLabel.text = @"Notes";
     [self displayContentController:vc];
 }
 
 - (IBAction)workButton:(UIButton *)sender {
     WorkModeViewController *vc = [_storyBoard instantiateViewControllerWithIdentifier:@"work"];
+    _titleLabel.text = @"Work Mode";
     [self displayContentController:vc];
 }
 
