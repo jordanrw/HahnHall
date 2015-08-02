@@ -30,6 +30,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    //load the class page
+    ClassSelectionViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"class"];
+    [self displayContentController:vc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,10 +53,6 @@
     
     ClassSelectionViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"class"];
     [self displayContentController:vc];
-    
-
-    
-    _classButton.selected = YES;
 }
 
 - (IBAction)notesButton:(UIButton *)sender {

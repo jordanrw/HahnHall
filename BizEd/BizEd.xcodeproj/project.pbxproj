@@ -30,6 +30,9 @@
 		17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63AB1B684B6000D5213D /* WorkModeViewController.m */; };
 		17CB63B61B69FAA700D5213D /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63B51B69FAA700D5213D /* TestTableViewController.m */; };
 		17CB63B91B6AC9B200D5213D /* LoginSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */; };
+		17CB63F31B6DBAF900D5213D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63F01B6DBAF900D5213D /* home.png */; };
+		17CB63F41B6DBAF900D5213D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63F11B6DBAF900D5213D /* profile.png */; };
+		17CB63F51B6DBAF900D5213D /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63F21B6DBAF900D5213D /* setting.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		17CB63B51B69FAA700D5213D /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		17CB63B71B6AC9B200D5213D /* LoginSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSignupViewController.h; sourceTree = "<group>"; };
 		17CB63B81B6AC9B200D5213D /* LoginSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSignupViewController.m; sourceTree = "<group>"; };
+		17CB63F01B6DBAF900D5213D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		17CB63F11B6DBAF900D5213D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		17CB63F21B6DBAF900D5213D /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 				17CB63AB1B684B6000D5213D /* WorkModeViewController.m */,
 				17CB63741B681A4C00D5213D /* Images.xcassets */,
 				17CB63761B681A4C00D5213D /* LaunchScreen.xib */,
+				17CB63F61B6DBB0600D5213D /* design */,
 				17CB638D1B681D6C00D5213D /* icons */,
 				17CB63671B681A4C00D5213D /* Supporting Files */,
 			);
@@ -183,6 +190,16 @@
 				17CB63981B681D6C00D5213D /* settings_outlined.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		17CB63F61B6DBB0600D5213D /* design */ = {
+			isa = PBXGroup;
+			children = (
+				17CB63F01B6DBAF900D5213D /* home.png */,
+				17CB63F11B6DBAF900D5213D /* profile.png */,
+				17CB63F21B6DBAF900D5213D /* setting.png */,
+			);
+			name = design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +293,12 @@
 				17CB63A01B681D6C00D5213D /* note_filled.png in Resources */,
 				17CB63731B681A4C00D5213D /* Main.storyboard in Resources */,
 				17CB63991B681D6C00D5213D /* bookmark.png in Resources */,
+				17CB63F31B6DBAF900D5213D /* home.png in Resources */,
+				17CB63F51B6DBAF900D5213D /* setting.png in Resources */,
 				17CB63781B681A4C00D5213D /* LaunchScreen.xib in Resources */,
 				17CB639D1B681D6C00D5213D /* idea.png in Resources */,
 				17CB63751B681A4C00D5213D /* Images.xcassets in Resources */,
+				17CB63F41B6DBAF900D5213D /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
