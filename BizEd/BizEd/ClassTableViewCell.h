@@ -10,4 +10,6 @@
 
 @interface ClassTableViewCell : UITableViewCell
 
+
+
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AssignmentViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface AssignmentViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @end
