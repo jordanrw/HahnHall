@@ -1,5 +1,5 @@
 //
-//  ClassAssignmentsTableViewController.h
+//  AssignmentViewController.h
 //  BizEd
 //
 //  Created by Jordan White on 8/1/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ClassAssignmentsTableViewController : UITableViewController
+@interface AssignmentViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
