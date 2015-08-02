@@ -16,6 +16,7 @@
 
 @implementation AssignmentViewController
 
+#pragma mark - set up
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,18 +27,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - Top View
+
+
+#pragma mark - TableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 0;
+    return 5;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     AssignmentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"assignmentCell"];
-    if (cell == nil) {
-        cell = [[AssignmentTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"assignmentCell"];
-    }
+//    if (cell == nil) {
+//        cell = [[AssignmentTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"assignmentCell"];
+//    }
     
+    cell.titleLabel.text = @"Hello";
     
     
     return cell;

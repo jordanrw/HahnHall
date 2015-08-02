@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177B26431B6DEDA500869AA7 /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B26421B6DEDA500869AA7 /* ClassTableViewCell.m */; };
 		17CB636A1B681A4C00D5213D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63691B681A4C00D5213D /* main.m */; };
 		17CB636D1B681A4C00D5213D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB636C1B681A4C00D5213D /* AppDelegate.m */; };
 		17CB63701B681A4C00D5213D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB636F1B681A4C00D5213D /* ViewController.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		177B26411B6DEDA500869AA7 /* ClassTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewCell.h; sourceTree = "<group>"; };
+		177B26421B6DEDA500869AA7 /* ClassTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewCell.m; sourceTree = "<group>"; };
 		17CB63641B681A4C00D5213D /* BizEd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BizEd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CB63681B681A4C00D5213D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17CB63691B681A4C00D5213D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 				17CB63F81B6DC73D00D5213D /* ClassViewController.m */,
 				17CB63FE1B6DD33100D5213D /* ClassSelectionTableViewController.h */,
 				17CB63FF1B6DD33100D5213D /* ClassSelectionTableViewController.m */,
+				177B26411B6DEDA500869AA7 /* ClassTableViewCell.h */,
+				177B26421B6DEDA500869AA7 /* ClassTableViewCell.m */,
 				17CB640A1B6DDD8B00D5213D /* AssignmentViewController.h */,
 				17CB640B1B6DDD8B00D5213D /* AssignmentViewController.m */,
 				17CB640D1B6DDF4B00D5213D /* AssignmentTableViewCell.h */,
@@ -354,6 +359,7 @@
 				17CB64001B6DD33100D5213D /* ClassSelectionTableViewController.m in Sources */,
 				17CB63F91B6DC73D00D5213D /* ClassViewController.m in Sources */,
 				17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */,
+				177B26431B6DEDA500869AA7 /* ClassTableViewCell.m in Sources */,
 				17CB63701B681A4C00D5213D /* ViewController.m in Sources */,
 				17CB63B91B6AC9B200D5213D /* LoginSignupViewController.m in Sources */,
 				17CB640F1B6DDF4B00D5213D /* AssignmentTableViewCell.m in Sources */,

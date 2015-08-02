@@ -10,4 +10,10 @@
 
 @interface AssignmentTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dueLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *continueButton;
+
 @end
