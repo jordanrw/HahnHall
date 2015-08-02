@@ -32,6 +32,8 @@
 		17CB63F51B6DBAF900D5213D /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 17CB63F21B6DBAF900D5213D /* setting.png */; };
 		17CB63F91B6DC73D00D5213D /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63F81B6DC73D00D5213D /* ClassViewController.m */; };
 		17CB63FC1B6DC8D300D5213D /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63FB1B6DC8D300D5213D /* NotesViewController.m */; };
+		17CB64001B6DD33100D5213D /* ClassSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63FF1B6DD33100D5213D /* ClassSelectionTableViewController.m */; };
+		17CB64031B6DD34100D5213D /* ClassAssignmentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB64021B6DD34100D5213D /* ClassAssignmentsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,10 @@
 		17CB63F81B6DC73D00D5213D /* ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
 		17CB63FA1B6DC8D300D5213D /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		17CB63FB1B6DC8D300D5213D /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		17CB63FE1B6DD33100D5213D /* ClassSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassSelectionTableViewController.h; sourceTree = "<group>"; };
+		17CB63FF1B6DD33100D5213D /* ClassSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassSelectionTableViewController.m; sourceTree = "<group>"; };
+		17CB64011B6DD34100D5213D /* ClassAssignmentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassAssignmentsTableViewController.h; sourceTree = "<group>"; };
+		17CB64021B6DD34100D5213D /* ClassAssignmentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassAssignmentsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +134,7 @@
 				17CB636E1B681A4C00D5213D /* ViewController.h */,
 				17CB636F1B681A4C00D5213D /* ViewController.m */,
 				17CB63711B681A4C00D5213D /* Main.storyboard */,
-				17CB63F71B6DC73D00D5213D /* ClassViewController.h */,
-				17CB63F81B6DC73D00D5213D /* ClassViewController.m */,
+				17CB63FD1B6DD31700D5213D /* Class */,
 				17CB63FA1B6DC8D300D5213D /* NotesViewController.h */,
 				17CB63FB1B6DC8D300D5213D /* NotesViewController.m */,
 				17CB63AA1B684B6000D5213D /* WorkModeViewController.h */,
@@ -195,6 +200,19 @@
 				17CB63F21B6DBAF900D5213D /* setting.png */,
 			);
 			name = design;
+			sourceTree = "<group>";
+		};
+		17CB63FD1B6DD31700D5213D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				17CB63F71B6DC73D00D5213D /* ClassViewController.h */,
+				17CB63F81B6DC73D00D5213D /* ClassViewController.m */,
+				17CB63FE1B6DD33100D5213D /* ClassSelectionTableViewController.h */,
+				17CB63FF1B6DD33100D5213D /* ClassSelectionTableViewController.m */,
+				17CB64011B6DD34100D5213D /* ClassAssignmentsTableViewController.h */,
+				17CB64021B6DD34100D5213D /* ClassAssignmentsTableViewController.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +330,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				17CB63FC1B6DC8D300D5213D /* NotesViewController.m in Sources */,
+				17CB64001B6DD33100D5213D /* ClassSelectionTableViewController.m in Sources */,
 				17CB63F91B6DC73D00D5213D /* ClassViewController.m in Sources */,
 				17CB63AC1B684B6000D5213D /* WorkModeViewController.m in Sources */,
 				17CB63701B681A4C00D5213D /* ViewController.m in Sources */,
 				17CB63B91B6AC9B200D5213D /* LoginSignupViewController.m in Sources */,
+				17CB64031B6DD34100D5213D /* ClassAssignmentsTableViewController.m in Sources */,
 				17CB636D1B681A4C00D5213D /* AppDelegate.m in Sources */,
 				17CB636A1B681A4C00D5213D /* main.m in Sources */,
 			);
