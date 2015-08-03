@@ -3,20 +3,29 @@
 //  BizEd
 //
 //  Created by Jordan White on 8/1/15.
-//  Copyright (c) 2015 Two Beards and Fro. All rights reserved.
+//  Copyright (c) 2015 Two Beards and Fro, LLC. All rights reserved.
 //
 
 #import "ClassSelectionTableViewController.h"
 #import "ClassTableViewCell.h"
+#import "Data.h"
+#import "EducationalClass.h"
 
 @interface ClassSelectionTableViewController ()
 
+@property (nonatomic, weak) NSArray *edClasses;
+
 @end
+
+
 
 @implementation ClassSelectionTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Data *data = [Data defaultData];
+    _edClasses = data.educationalClasses;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -30,8 +39,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
+#pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
@@ -39,7 +48,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 4;
+    return [self.edClasses count];
 }
 
 
@@ -48,9 +57,29 @@
     ClassTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"classCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    EducationalClass *clss = [self.edClasses objectAtIndex:indexPath.row];
+    cell.classLabel.text = clss.title;
+    cell.timeLabel.text = clss.time;
+    cell.locationLabel.text = clss.location;
+    cell.noteLabel.text = clss.details;
+    
+//    cell.backgroundView = cell.theView;
+//    cell.selectedBackgroundView = cell.theView;
+//    cell.theView.backgroundColor = [UIColor redColor];
+
+    
+    UIView *selectionColor = [[UIView alloc]init];
+    selectionColor.backgroundColor = [UIColor colorWithRed:0.26 green:0.27 blue:0.28 alpha:1];
+    cell.selectedBackgroundView = selectionColor;
+    
+    cell.classLabel.highlightedTextColor = [UIColor whiteColor];
+    cell.timeLabel.highlightedTextColor = [UIColor whiteColor];
+    cell.locationLabel.highlightedTextColor = [UIColor whiteColor];
     
     return cell;
 }
+
+
 
 
 

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		177B26431B6DEDA500869AA7 /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B26421B6DEDA500869AA7 /* ClassTableViewCell.m */; };
+		177B273D1B6F188300869AA7 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 177B273C1B6F188300869AA7 /* record.png */; };
+		177B27401B6F202800869AA7 /* EducationalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B273F1B6F202800869AA7 /* EducationalClass.m */; };
+		177B27441B6FF81900869AA7 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B27431B6FF81900869AA7 /* Data.m */; };
+		177B27461B70008800869AA7 /* join.png in Resources */ = {isa = PBXBuildFile; fileRef = 177B27451B70008800869AA7 /* join.png */; };
+		177B27481B70088800869AA7 /* cont.png in Resources */ = {isa = PBXBuildFile; fileRef = 177B27471B70088800869AA7 /* cont.png */; };
 		17CB636A1B681A4C00D5213D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB63691B681A4C00D5213D /* main.m */; };
 		17CB636D1B681A4C00D5213D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB636C1B681A4C00D5213D /* AppDelegate.m */; };
 		17CB63701B681A4C00D5213D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CB636F1B681A4C00D5213D /* ViewController.m */; };
@@ -51,6 +56,13 @@
 /* Begin PBXFileReference section */
 		177B26411B6DEDA500869AA7 /* ClassTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewCell.h; sourceTree = "<group>"; };
 		177B26421B6DEDA500869AA7 /* ClassTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewCell.m; sourceTree = "<group>"; };
+		177B273C1B6F188300869AA7 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		177B273E1B6F202800869AA7 /* EducationalClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationalClass.h; sourceTree = "<group>"; };
+		177B273F1B6F202800869AA7 /* EducationalClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationalClass.m; sourceTree = "<group>"; };
+		177B27421B6FF81900869AA7 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		177B27431B6FF81900869AA7 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		177B27451B70008800869AA7 /* join.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = join.png; path = ../join.png; sourceTree = "<group>"; };
+		177B27471B70088800869AA7 /* cont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cont.png; sourceTree = "<group>"; };
 		17CB63641B681A4C00D5213D /* BizEd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BizEd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CB63681B681A4C00D5213D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17CB63691B681A4C00D5213D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +124,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177B27411B6F202C00869AA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				177B27421B6FF81900869AA7 /* Data.h */,
+				177B27431B6FF81900869AA7 /* Data.m */,
+				177B273E1B6F202800869AA7 /* EducationalClass.h */,
+				177B273F1B6F202800869AA7 /* EducationalClass.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		17CB635B1B681A4C00D5213D = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +163,9 @@
 				17CB636E1B681A4C00D5213D /* ViewController.h */,
 				17CB636F1B681A4C00D5213D /* ViewController.m */,
 				17CB63711B681A4C00D5213D /* Main.storyboard */,
-				17CB63FD1B6DD31700D5213D /* Class */,
-				17CB64101B6DDF5F00D5213D /* Notes */,
+				177B27411B6F202C00869AA7 /* Model */,
+				17CB63FD1B6DD31700D5213D /* Class View */,
+				17CB64101B6DDF5F00D5213D /* Notes View */,
 				17CB64111B6DDF6300D5213D /* Work Mode */,
 				17CB63741B681A4C00D5213D /* Images.xcassets */,
 				17CB63761B681A4C00D5213D /* LaunchScreen.xib */,
@@ -199,6 +223,9 @@
 		17CB63F61B6DBB0600D5213D /* design */ = {
 			isa = PBXGroup;
 			children = (
+				177B27471B70088800869AA7 /* cont.png */,
+				177B27451B70008800869AA7 /* join.png */,
+				177B273C1B6F188300869AA7 /* record.png */,
 				17CB63F01B6DBAF900D5213D /* home.png */,
 				17CB63F11B6DBAF900D5213D /* profile.png */,
 				17CB63F21B6DBAF900D5213D /* setting.png */,
@@ -206,7 +233,7 @@
 			name = design;
 			sourceTree = "<group>";
 		};
-		17CB63FD1B6DD31700D5213D /* Class */ = {
+		17CB63FD1B6DD31700D5213D /* Class View */ = {
 			isa = PBXGroup;
 			children = (
 				17CB63F71B6DC73D00D5213D /* ClassViewController.h */,
@@ -220,16 +247,16 @@
 				17CB640D1B6DDF4B00D5213D /* AssignmentTableViewCell.h */,
 				17CB640E1B6DDF4B00D5213D /* AssignmentTableViewCell.m */,
 			);
-			name = Class;
+			name = "Class View";
 			sourceTree = "<group>";
 		};
-		17CB64101B6DDF5F00D5213D /* Notes */ = {
+		17CB64101B6DDF5F00D5213D /* Notes View */ = {
 			isa = PBXGroup;
 			children = (
 				17CB63FA1B6DC8D300D5213D /* NotesViewController.h */,
 				17CB63FB1B6DC8D300D5213D /* NotesViewController.m */,
 			);
-			name = Notes;
+			name = "Notes View";
 			sourceTree = "<group>";
 		};
 		17CB64111B6DDF6300D5213D /* Work Mode */ = {
@@ -286,7 +313,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
-				ORGANIZATIONNAME = "Two Beards and Fro";
+				ORGANIZATIONNAME = "Two Beards and Fro, LLC";
 				TargetAttributes = {
 					17CB63631B681A4C00D5213D = {
 						CreatedOnToolsVersion = 6.4;
@@ -331,7 +358,10 @@
 				17CB639A1B681D6C00D5213D /* bookmark_filled.png in Resources */,
 				17CB63A01B681D6C00D5213D /* note_filled.png in Resources */,
 				17CB63731B681A4C00D5213D /* Main.storyboard in Resources */,
+				177B273D1B6F188300869AA7 /* record.png in Resources */,
+				177B27481B70088800869AA7 /* cont.png in Resources */,
 				17CB63991B681D6C00D5213D /* bookmark.png in Resources */,
+				177B27461B70008800869AA7 /* join.png in Resources */,
 				17CB63F31B6DBAF900D5213D /* home.png in Resources */,
 				17CB63F51B6DBAF900D5213D /* setting.png in Resources */,
 				17CB63781B681A4C00D5213D /* LaunchScreen.xib in Resources */,
@@ -355,6 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177B27441B6FF81900869AA7 /* Data.m in Sources */,
+				177B27401B6F202800869AA7 /* EducationalClass.m in Sources */,
 				17CB63FC1B6DC8D300D5213D /* NotesViewController.m in Sources */,
 				17CB64001B6DD33100D5213D /* ClassSelectionTableViewController.m in Sources */,
 				17CB63F91B6DC73D00D5213D /* ClassViewController.m in Sources */,

@@ -16,13 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSLog(@"width: %f", self.view.bounds.size.width);
+    self.maximumPrimaryColumnWidth = 415;
+    self.preferredPrimaryColumnWidthFraction = .5;
+    
+    //self.splitViewController.preferredPrimaryColumnWidthFraction = 0.5;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+//954  |  415 + 539
+
 
 /*
 #pragma mark - Navigation

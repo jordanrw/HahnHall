@@ -3,7 +3,7 @@
 //  BizEd
 //
 //  Created by Jordan White on 8/1/15.
-//  Copyright (c) 2015 Two Beards and Fro. All rights reserved.
+//  Copyright (c) 2015 Two Beards and Fro, LLC. All rights reserved.
 //
 
 #import "AssignmentViewController.h"
@@ -31,7 +31,9 @@
 #pragma mark - Top View
 
 
+
 #pragma mark - TableView
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
@@ -45,15 +47,19 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     AssignmentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"assignmentCell"];
-//    if (cell == nil) {
-//        cell = [[AssignmentTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"assignmentCell"];
-//    }
     
     cell.titleLabel.text = @"Hello";
+    cell.backgroundColor = [UIColor colorWithRed:0.85 green:0.85 blue:0.85 alpha:1];
+    
     
     
     return cell;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
+}
+
 
 /*
 #pragma mark - Navigation

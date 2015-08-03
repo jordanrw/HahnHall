@@ -3,12 +3,15 @@
 //  BizEd
 //
 //  Created by Jordan White on 7/28/15.
-//  Copyright (c) 2015 Two Beards and Fro. All rights reserved.
+//  Copyright (c) 2015 Two Beards and Fro, LLC. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "Data.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) Data *data;
 
 @end
 
@@ -16,7 +19,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self. data = [Data defaultData];
+    
     return YES;
 }
 
