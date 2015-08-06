@@ -7,6 +7,8 @@
 //
 
 #import "ClassViewController.h"
+#import "ClassSelectionTableViewController.h"
+#import "AssignmentViewController.h"
 
 @interface ClassViewController ()
 
@@ -17,11 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //setting the width of the tableview
     NSLog(@"width: %f", self.view.bounds.size.width);
     self.maximumPrimaryColumnWidth = 415;
     self.preferredPrimaryColumnWidthFraction = .5;
-    
     //self.splitViewController.preferredPrimaryColumnWidthFraction = 0.5;
+    
+    AssignmentViewController *detailVC = (AssignmentViewController *)[self.viewControllers objectAtIndex:1];
+    ClassSelectionTableViewController *masterVC = (ClassSelectionTableViewController *)[[self.viewControllers objectAtIndex:0] topViewController];
+    
+    //talker            //receiver
+    masterVC.delegate = detailVC;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,7 +38,6 @@
 }
 
 
-//954  |  415 + 539
 
 
 /*

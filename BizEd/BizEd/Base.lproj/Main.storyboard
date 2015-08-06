@@ -198,7 +198,7 @@
         <!--Assignment View Controller-->
         <scene sceneID="Uyu-Ri-eca">
             <objects>
-                <viewController id="hvy-SY-aYZ" customClass="AssignmentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aVC" id="hvy-SY-aYZ" customClass="AssignmentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ejg-OZ-a5X"/>
                         <viewControllerLayoutGuide type="bottom" id="6iN-Ht-Han"/>
@@ -306,6 +306,11 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="539" height="704"/>
+                    <connections>
+                        <outlet property="assignmentLabel" destination="YSZ-fj-3Tz" id="oz1-77-55r"/>
+                        <outlet property="livePreviewView" destination="zul-CJ-pLG" id="oNe-sf-TNN"/>
+                        <outlet property="topLabel" destination="f6h-4j-G1i" id="hiZ-m2-ixP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgx-wI-PQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ClassSelectionTableViewController.h"
 
-@interface AssignmentViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface AssignmentViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, EducationClassDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *topLabel;
+@property (strong, nonatomic) IBOutlet UILabel *assignmentLabel;
+@property (strong, nonatomic) IBOutlet UIWebView *livePreviewView;
+
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "ClassSelectionTableViewController.h"
+#import "AssignmentViewController.h"
+
 #import "ClassTableViewCell.h"
 #import "Data.h"
 #import "EducationalClass.h"
@@ -26,6 +28,9 @@
     
     Data *data = [Data defaultData];
     _edClasses = data.educationalClasses;
+    
+    
+    //NSLog(@"the ones in ClassTableView: %@",)
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -80,7 +85,13 @@
 }
 
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%ld", (long)indexPath.row);
+    
+    EducationalClass *edClass = [self.edClasses objectAtIndex:indexPath.row];
+    [self.delegate didSelectEdClass:edClass];
+    
+}
 
 
 /*

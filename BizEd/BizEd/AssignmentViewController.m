@@ -29,11 +29,14 @@
 
 
 #pragma mark - Top View
-
+- (void)didSelectEdClass:(EducationalClass *)edClass {
+    
+    self.topLabel.text = edClass.title;
+    
+}
 
 
 #pragma mark - TableView
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;

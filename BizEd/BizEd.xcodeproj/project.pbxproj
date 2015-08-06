@@ -124,6 +124,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174A83D81B72C89C00EE30E6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				17CB640A1B6DDD8B00D5213D /* AssignmentViewController.h */,
+				17CB640B1B6DDD8B00D5213D /* AssignmentViewController.m */,
+				17CB640D1B6DDF4B00D5213D /* AssignmentTableViewCell.h */,
+				17CB640E1B6DDF4B00D5213D /* AssignmentTableViewCell.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		174A83D91B72C8A400EE30E6 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				17CB63FE1B6DD33100D5213D /* ClassSelectionTableViewController.h */,
+				17CB63FF1B6DD33100D5213D /* ClassSelectionTableViewController.m */,
+				177B26411B6DEDA500869AA7 /* ClassTableViewCell.h */,
+				177B26421B6DEDA500869AA7 /* ClassTableViewCell.m */,
+			);
+			name = Master;
+			sourceTree = "<group>";
+		};
 		177B27411B6F202C00869AA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,14 +260,8 @@
 			children = (
 				17CB63F71B6DC73D00D5213D /* ClassViewController.h */,
 				17CB63F81B6DC73D00D5213D /* ClassViewController.m */,
-				17CB63FE1B6DD33100D5213D /* ClassSelectionTableViewController.h */,
-				17CB63FF1B6DD33100D5213D /* ClassSelectionTableViewController.m */,
-				177B26411B6DEDA500869AA7 /* ClassTableViewCell.h */,
-				177B26421B6DEDA500869AA7 /* ClassTableViewCell.m */,
-				17CB640A1B6DDD8B00D5213D /* AssignmentViewController.h */,
-				17CB640B1B6DDD8B00D5213D /* AssignmentViewController.m */,
-				17CB640D1B6DDF4B00D5213D /* AssignmentTableViewCell.h */,
-				17CB640E1B6DDF4B00D5213D /* AssignmentTableViewCell.m */,
+				174A83D91B72C8A400EE30E6 /* Master */,
+				174A83D81B72C89C00EE30E6 /* Detail */,
 			);
 			name = "Class View";
 			sourceTree = "<group>";
